@@ -1,0 +1,1308 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jornadas Newton – Colegio Tecnológico Isaac Newton</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&family=Inter:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- ─── HEADER (un solo header, sin anidamiento) ─── -->
+    <header class="header">
+      <div class="logo">
+        <img src="logo1.png" alt="Logo Isaac Newton" />
+        <div class="logo-text">
+          <h1>Isaac Newton</h1>
+          <p class="primero">Sapientia pro vitam</p>
+        </div>
+      </div>
+      <nav>
+        <ul class="menu">
+          <li>
+            <a onclick="showPage('jornadas')" id="nav-jornadas" class="active"
+              >JORNADAS</a
+            >
+          </li>
+          <li>
+            <a onclick="showPage('contactos')" id="nav-contactos">CONTACTOS</a>
+          </li>
+          <li>
+            <a onclick="showPage('proyectos')" id="nav-proyectos">PROYECTOS</a>
+          </li>
+          <li>
+            <a onclick="showPage('institucional')" id="nav-institucional"
+              >INSTITUCIONAL</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- ══════════ PAGE: JORNADAS ══════════ -->
+    <div id="page-jornadas" class="page active">
+      <div class="hero">
+        <div class="container">
+          <div class="hero-badge">Jornadas Institucionales 2026</div>
+          <h1>JORNADAS NEWTON</h1>
+          <p class="hero-tagline">Interconectados por un futuro sustentable</p>
+          <div class="axes">
+            <div class="axis">
+              <div class="axis-dot" style="background: #3854b6"></div>
+              Naturaleza
+            </div>
+            <div class="axis">
+              <div class="axis-dot" style="background: #3854b6"></div>
+              Sociedad
+            </div>
+            <div class="axis">
+              <div class="axis-dot" style="background: #3854b6"></div>
+              Consumo
+            </div>
+            <div class="axis">
+              <div class="axis-dot" style="background: #3854b6"></div>
+              Tecnología
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-img">
+          <svg
+            width="32"
+            height="32"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="white"
+          >
+
+            <path d="M3 9h18M9 21V9" stroke-width="1.5" />
+          </svg>
+        </div>
+      </div>
+
+      <section class="welcome">
+        <div class="container">
+          <div class="section-label">Bienvenidos</div>
+          <h2>Jornadas Interactivas Institucionales Newton</h2>
+          <p>
+            En el Colegio Tecnológico Isaac Newton, aprender es hacer,
+            experimentar y compartir. Por eso, durante estas jornadas, los
+            estudiantes de 1° a 6° año presentan en vivo (vía streaming) los
+            proyectos que desarrollaron durante el año.
+          </p>
+          <p>
+            A través de cuatro grandes ejes, nuestros jóvenes exploran problemas
+            reales, proponen soluciones creativas y muestran cómo la ciencia y
+            la tecnología pueden transformar el mundo que nos rodea.
+          </p>
+          <p>
+            Te invitamos a recorrer las presentaciones, conocer sus ideas y ser
+            parte de esta experiencia interactiva. La ciencia no se aprende
+            sola: se vive, se cuestiona y se comparte.
+          </p>
+          <p>
+            Cada curso, desde 1° hasta 6° año, eligió un tema y armó su propio
+            proyecto. Algunos hicieron experimentos, otros programaron juegos,
+            varios grabaron micros y muchos van a exponer en vivo. Todo eso lo
+            vas a poder ver por streaming en YouTube.
+          </p>
+        </div>
+      </section>
+
+      <section class="countdown-section">
+        <div class="container">
+          <h2>¡El evento se acerca!</h2>
+          <div class="countdown">
+            <div class="count-box">
+              <div class="count-num" id="days">00</div>
+              <div class="count-label">Días</div>
+            </div>
+            <div class="count-box">
+              <div class="count-num" id="hours">00</div>
+              <div class="count-label">Horas</div>
+            </div>
+            <div class="count-box">
+              <div class="count-num" id="minutes">00</div>
+              <div class="count-label">Minutos</div>
+            </div>
+            <div class="count-box">
+              <div class="count-num" id="seconds">00</div>
+              <div class="count-label">Segundos</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="streaming-section">
+        <div class="container">
+          <h2>
+            <div class="live-dot"></div>
+            ¡Streaming en vivo!
+          </h2>
+          <p>
+            Como leíste anteriormente, estas jornadas se tornan más tecnológicas
+            y te invitamos a ser espectador de nuestros proyectos. Detrás de
+            este en vivo se encuentra todo el desempeño y esfuerzo organizado de
+            cada curso.
+          </p>
+          <p>
+            Nos alegraría muchísimo que formes parte de esta experiencia. Verte
+            del otro lado de la pantalla es lo que más motiva a nuestros
+            estudiantes.
+          </p>
+          <div class="video-placeholder"><div class="play-btn"></div></div>
+        </div>
+      </section>
+
+      <section class="moments-section">
+        <div class="container">
+          <h2>Momentos Compartidos</h2>
+          <p>
+            Las Jornadas Newton no nacen de un día para el otro. Detrás de cada
+            exposición, cada streaming y cada proyecto hay semanas de trabajo,
+            ensayos, pruebas y mucha creatividad. Todo empezó en las aulas,
+            cuando los estudiantes comenzaron a pensar qué querían decir, cómo
+            querían mostrarlo y de qué manera podían sorprender.
+          </p>
+          <a href="#" class="drive-card">
+            <svg
+              class="drive-icon"
+              viewBox="0 0 87.3 78"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="m6.6 66.85 3.85 6.65c.8 1.4 1.95 2.5 3.3 3.3l13.75-23.8h-27.5c0 1.55.4 3.1 1.2 4.5z"
+                fill="#0066da"
+              />
+              <path
+                d="m43.65 25-13.75-23.8c-1.35.8-2.5 1.9-3.3 3.3l-25.4 44a9.06 9.06 0 0 0 -1.2 4.5h27.5z"
+                fill="#00ac47"
+              />
+              <path
+                d="m73.55 76.8c1.35-.8 2.5-1.9 3.3-3.3l1.6-2.75 7.65-13.25c.8-1.4 1.2-2.95 1.2-4.5h-27.502l5.852 11.5z"
+                fill="#ea4335"
+              />
+              <path
+                d="m43.65 25 13.75-23.8c-1.35-.8-2.9-1.2-4.5-1.2h-18.5c-1.6 0-3.15.45-4.5 1.2z"
+                fill="#00832d"
+              />
+              <path
+                d="m59.8 53h-32.3l-13.75 23.8c1.35.8 2.9 1.2 4.5 1.2h50.8c1.6 0 3.15-.45 4.5-1.2z"
+                fill="#2684fc"
+              />
+              <path
+                d="m73.4 26.5-12.7-22c-.8-1.4-1.95-2.5-3.3-3.3l-13.75 23.8 16.15 27.5h27.45c0-1.55-.4-3.1-1.2-4.5z"
+                fill="#ffba00"
+              />
+            </svg>
+            <div class="drive-card-text">
+              <strong>Carpeta Google Drive</strong>
+              <span>Jornadas Institucionales Isaac Newton 2026</span>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <section class="past-section">
+        <div class="container">
+          <div class="section-label">Historial</div>
+          <h2>Otros años</h2>
+          <p>
+            Esto no es la primera vez. Ya tuvimos jornadas interactivas en años
+            anteriores, con proyectos, videos y mucho trabajo en equipo. Si
+            querés ver cómo nos fue, acá te dejamos algunos links con videos y
+            fotos de ediciones pasadas.
+          </p>
+          <div class="past-links">
+            <a href="#" class="past-link">
+              <span class="past-year">2025</span>
+              <span class="past-name">Jornadas Interactivas Isaac Newton</span>
+              <span class="past-arrow">→</span>
+            </a>
+            <a href="#" class="past-link">
+              <span class="past-year">2024</span>
+              <span class="past-name">Jornadas Interactivas Isaac Newton</span>
+              <span class="past-arrow">→</span>
+            </a>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- /page-jornadas -->
+
+    <!-- ══════════ PAGE: CONTACTOS ══════════ -->
+    <div id="page-contactos" class="page">
+      <section
+        style="background: var(--white); border-bottom: 1px solid var(--gray)"
+      >
+        <div class="container">
+          <div class="contactos-header">
+            <div class="section-label">Contactos</div>
+            <h2>Redes</h2>
+            <p>
+              Las redes sociales del colegio Isaac Newton no viven solo de las
+              jornadas. Ahí compartimos el día a día: actividades en el aula,
+              salidas educativas, logros de los estudiantes, fechas importantes,
+              anuncios y también, por supuesto, todo lo relacionado con las
+              Jornadas Newton.
+            </p>
+            <br />
+            <p>
+              Si querés estar al tanto de lo que pasa en el colegio más allá del
+              streaming, seguinos. Vas a encontrar desde fotos de los recreos
+              hasta invitaciones a eventos, pasando por reflexiones de los
+              profes y proyectos que vamos haciendo durante todo el año. Las
+              jornadas son un momento especial, pero la vida del colegio sigue
+              todos los días.
+            </p>
+          </div>
+
+          <div class="redes-cta">
+            <h3>Seguinos y comunicate!</h3>
+            <div class="social-grid">
+              <a href="#" class="social-card">
+                <div class="social-icon-wrap">
+                  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
+                    />
+                  </svg>
+                </div>
+                <span>Instagram</span>
+              </a>
+
+              <a href="#" class="social-card">
+                <div class="social-icon-wrap">
+                  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"
+                    />
+                  </svg>
+                </div>
+                <span>Facebook</span>
+              </a>
+
+              <a href="#" class="social-card">
+                <div class="social-icon-wrap">
+                  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
+                    />
+                  </svg>
+                </div>
+                <span>Whatsapp</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- /page-contactos -->
+
+    <!-- ══════════ PAGE: PROYECTOS ══════════ -->
+    <div id="page-proyectos" class="page">
+      <!-- Vista 1: lista de cursos -->
+      <div id="sub-lista">
+        <div class="container">
+          <div class="proy-header">
+            <div class="section-label">Proyectos</div>
+            <h2>Proyectos</h2>
+            <p>
+              A continuación, se detallan los trabajos realizados por los
+              estudiantes de 1° a 6° año en el marco de las Jornadas Newton.
+              Cada curso desarrolló su propio proyecto a partir de los ejes de
+              Naturaleza, Sociedad, Consumo y Tecnología, con el objetivo de
+              compartirlo en vivo durante el streaming. Detrás de cada streaming
+              hay una historia. Cada curso, con su estilo y su mirada, abordó
+              los ejes. Algunos investigaron, otros programaron, varios
+              construyeron y todos aprendieron. Te invitamos a conocer sus
+              proyectos.
+            </p>
+          </div>
+          <div class="proy-cursos-title">Cursos</div>
+          <div class="cursos-grid">
+            <button class="curso-btn c-blue" onclick="openCurso('6to año')">
+              6to<br />año
+            </button>
+            <button class="curso-btn c-orange" onclick="openCurso('5to año')">
+              5to<br />año
+            </button>
+            <button class="curso-btn c-blue" onclick="openCurso('4to año')">
+              4to<br />año
+            </button>
+            <button class="curso-btn c-orange" onclick="openCurso('3ro año')">
+              3ro<br />año
+            </button>
+            <button class="curso-btn c-blue" onclick="openCurso('2do año')">
+              2do<br />año
+            </button>
+            <button class="curso-btn c-orange" onclick="openCurso('1er año')">
+              1er<br />año
+            </button>
+          </div>
+          <div style="height: 56px"></div>
+        </div>
+      </div>
+
+      <!-- Vista 2: detalle del curso -->
+      <div id="sub-curso">
+        <div class="container">
+          <div class="curso-detalle-header">
+            <div
+              style="
+                display: flex;
+                align-items: center;
+                gap: 14px;
+                margin-bottom: 16px;
+              "
+            >
+              <button class="back-btn" onclick="goBack('lista')" title="Volver">
+                &#8592;
+              </button>
+              <h2 id="curso-titulo">XXX año</h2>
+            </div>
+            <p id="curso-desc">
+              Descripción del curso y sus proyectos durante las Jornadas Newton
+              2026. El equipo trabajó durante semanas para preparar una
+              presentación que refleja su aprendizaje a lo largo del año.
+            </p>
+          </div>
+          <div class="action-grid">
+            <button class="action-btn ab-stream" onclick="openSub('streaming')">
+              Streaming
+            </button>
+            <button class="action-btn ab-gallery" onclick="openSub('galeria')">
+              Galería
+            </button>
+            <button class="action-btn ab-back" onclick="openSub('backstage')">
+              Back stage
+            </button>
+          </div>
+          <div class="proy-list-title">Proyectos</div>
+          <div id="acordeon-container">
+            <!-- generado por JS -->
+          </div>
+          <div style="height: 56px"></div>
+        </div>
+      </div>
+
+      <!-- Vista 3: GALERIA -->
+      <div id="sub-galeria">
+        <div class="container">
+          <div class="galeria-header">
+            <button class="back-btn" onclick="goBack('curso')" title="Volver">
+              &#8592;
+            </button>
+            <h2>Galería</h2>
+          </div>
+          <div class="galeria-grid" id="galeria-thumbs">
+            <!-- 8 placeholders -->
+            <div class="galeria-thumb" onclick="selectGalImg(0)">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#888"
+                stroke-width="1.5"
+              >
+                <rect x="3" y="3" width="18" height="18" rx="2" />
+                <circle cx="8.5" cy="8.5" r="1.5" />
+                <path d="M21 15l-5-5L5 21" />
+              </svg>
+            </div>
+            <div class="galeria-thumb" onclick="selectGalImg(1)">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#888"
+                stroke-width="1.5"
+              >
+                <rect x="3" y="3" width="18" height="18" rx="2" />
+                <circle cx="8.5" cy="8.5" r="1.5" />
+                <path d="M21 15l-5-5L5 21" />
+              </svg>
+            </div>
+            <div class="galeria-thumb" onclick="selectGalImg(2)">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#888"
+                stroke-width="1.5"
+              >
+                <rect x="3" y="3" width="18" height="18" rx="2" />
+                <circle cx="8.5" cy="8.5" r="1.5" />
+                <path d="M21 15l-5-5L5 21" />
+              </svg>
+            </div>
+            <div class="galeria-thumb" onclick="selectGalImg(3)">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#888"
+                stroke-width="1.5"
+              >
+                <rect x="3" y="3" width="18" height="18" rx="2" />
+                <circle cx="8.5" cy="8.5" r="1.5" />
+                <path d="M21 15l-5-5L5 21" />
+              </svg>
+            </div>
+            <div class="galeria-thumb" onclick="selectGalImg(4)">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#888"
+                stroke-width="1.5"
+              >
+                <rect x="3" y="3" width="18" height="18" rx="2" />
+                <circle cx="8.5" cy="8.5" r="1.5" />
+                <path d="M21 15l-5-5L5 21" />
+              </svg>
+            </div>
+            <div class="galeria-thumb" onclick="selectGalImg(5)">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#888"
+                stroke-width="1.5"
+              >
+                <rect x="3" y="3" width="18" height="18" rx="2" />
+                <circle cx="8.5" cy="8.5" r="1.5" />
+                <path d="M21 15l-5-5L5 21" />
+              </svg>
+            </div>
+            <div class="galeria-thumb" onclick="selectGalImg(6)">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#888"
+                stroke-width="1.5"
+              >
+                <rect x="3" y="3" width="18" height="18" rx="2" />
+                <circle cx="8.5" cy="8.5" r="1.5" />
+                <path d="M21 15l-5-5L5 21" />
+              </svg>
+            </div>
+            <div class="galeria-thumb" onclick="selectGalImg(7)">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#888"
+                stroke-width="1.5"
+              >
+                <rect x="3" y="3" width="18" height="18" rx="2" />
+                <circle cx="8.5" cy="8.5" r="1.5" />
+                <path d="M21 15l-5-5L5 21" />
+              </svg>
+            </div>
+          </div>
+          <div class="galeria-big" id="galeria-big">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#aaa" stroke-width="1">
+              <rect x="3" y="3" width="18" height="18" rx="2" />
+              <circle cx="8.5" cy="8.5" r="1.5" />
+              <path d="M21 15l-5-5L5 21" />
+            </svg>
+          </div>
+          <div class="gal-nav">
+            <button class="gal-arrow" onclick="galNav(-1)">&#8592;</button>
+            <span
+              id="gal-counter"
+              style="font-size: 13px; color: var(--text-muted)"
+              >1 / 8</span
+            >
+            <button class="gal-arrow" onclick="galNav(1)">&#8594;</button>
+          </div>
+          <div style="height: 40px"></div>
+        </div>
+      </div>
+
+      <!-- Vista 4: STREAMING -->
+  <div id="sub-streaming">
+    <div class="container">
+      <div class="stream-header">
+        <button class="back-btn" onclick="goBack('curso')" title="Volver">&#8592;</button>
+        <h2>Streaming</h2>
+      </div>
+      <div class="stream-body">
+        <div>
+          <div class="stream-video"><div class="play-btn"></div></div>
+
+          <div class="stream-nav">
+
+          </div>
+        </div>
+        <div class="stream-desc">
+          <p id="stream-curso-label" style="font-weight:700;color:var(--blue-dark);margin-bottom:10px;font-family:'Montserrat',sans-serif;">Streaming – XXX año</p>
+          <p>Acá vas a poder ver el streaming del curso en el momento del evento. Todo el proceso, la energía del en vivo y el resultado final de semanas de trabajo.</p>
+          <br><p>Cuando el evento esté activo, el video aparecerá embebido en este espacio. Por ahora te dejamos el placeholder con el reproductor listo.</p>
+        </div>
+      </div>
+      <div style="height:40px;"></div>
+    </div>
+  </div>
+
+      <!-- Vista 5: BACKSTAGE -->
+      <div id="sub-backstage">
+        <div class="container">
+          <div class="backstage-header">
+            <button class="back-btn" onclick="goBack('curso')" title="Volver">
+              &#8592;
+            </button>
+            <h2>Back Stage</h2>
+          </div>
+          <div class="backstage-body">
+            <div>
+              <div class="backstage-video"><div class="play-btn"></div></div>
+              <div class="backstage-thumbs">
+                <div class="backstage-thumb">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="#888"
+                    stroke-width="1.5"
+                  >
+                    <rect x="3" y="3" width="18" height="18" rx="2" />
+                    <circle cx="8.5" cy="8.5" r="1.5" />
+                    <path d="M21 15l-5-5L5 21" />
+                  </svg>
+                </div>
+                <div class="backstage-thumb">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="#888"
+                    stroke-width="1.5"
+                  >
+                    <rect x="3" y="3" width="18" height="18" rx="2" />
+                    <circle cx="8.5" cy="8.5" r="1.5" />
+                    <path d="M21 15l-5-5L5 21" />
+                  </svg>
+                </div>
+                <div class="backstage-thumb">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="#888"
+                    stroke-width="1.5"
+                  >
+                    <rect x="3" y="3" width="18" height="18" rx="2" />
+                    <circle cx="8.5" cy="8.5" r="1.5" />
+                    <path d="M21 15l-5-5L5 21" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="backstage-desc">
+              <p
+                id="backstage-curso-label"
+                style="
+                  font-weight: 700;
+                  color: var(--blue-dark);
+                  margin-bottom: 10px;
+                  font-family: 'Montserrat', sans-serif;
+                "
+              >
+                Backstage – XXX año
+              </p>
+              <p>
+                Todo lo que pasó detrás de cámara: los ensayos, los nervios, la
+                preparación. El proceso creativo que dio vida a la presentación
+                del curso.
+              </p>
+              <br />
+              <p>
+                Omnium habeat vestra potestate, non aliud quam aversantur
+                incurrere. Sed si ipse aversaris, ad languorem: et mors,
+                paupertas et tu miseros.
+              </p>
+            </div>
+          </div>
+          <div style="height: 40px"></div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      /* ─────────────────────────────────────────
+         DATOS DE PROYECTOS POR CURSO
+         Podés editar esto para agregar contenido real
+      ───────────────────────────────────────── */
+      const cursosData = {
+        "6to año": {
+          desc: "El 6to año exploró los grandes ejes de las Jornadas Newton con proyectos que combinan investigación científica y reflexión social. Un equipo comprometido que sorprendió con su nivel de análisis.",
+          proyectos: [
+            {
+              titulo: "Proyecto 1",
+              texto:
+                "Investigación sobre el impacto de los residuos plásticos en ecosistemas urbanos. El equipo realizó muestreos en tres barrios y presentó soluciones basadas en economía circular.",
+            },
+            {
+              titulo: "Proyecto 2",
+              texto:
+                "Desarrollo de una aplicación web para medir la huella de carbono del hogar. Incluye calculadora interactiva y recomendaciones personalizadas.",
+            },
+            {
+              titulo: "Proyecto 3",
+              texto:
+                "Estudio comparativo del consumo energético en edificios públicos y propuesta de mejoras con energías renovables.",
+            },
+            {
+              titulo: "Proyecto 4",
+              texto:
+                "Análisis de algoritmos de recomendación en redes sociales y su impacto en la percepción de la realidad de los jóvenes.",
+            },
+          ],
+        },
+        "5to año": {
+          desc: "El 5to año se destacó por la creatividad y el trabajo colaborativo. Sus proyectos abordan problemáticas actuales desde una mirada innovadora y propositiva.",
+          proyectos: [
+            {
+              titulo: "Proyecto 1",
+              texto:
+                "Huerta hidropónica automatizada con sensores Arduino. El sistema monitorea humedad, temperatura y pH y envía alertas por WhatsApp.",
+            },
+            {
+              titulo: "Proyecto 2",
+              texto:
+                "Campaña de concientización sobre el consumo responsable de agua, con infografías, videos y encuestas en la comunidad escolar.",
+            },
+            {
+              titulo: "Proyecto 3",
+              texto:
+                "Videojuego educativo sobre energías renovables desarrollado con Scratch, orientado a estudiantes de primaria.",
+            },
+          ],
+        },
+        "4to año": {
+          desc: "El 4to año trabajó con foco en tecnología y sociedad, explorando cómo las herramientas digitales pueden mejorar la vida cotidiana.",
+          proyectos: [
+            {
+              titulo: "Proyecto 1",
+              texto:
+                "Sistema de alerta temprana para adultos mayores utilizando sensores de movimiento y conectividad IoT.",
+            },
+            {
+              titulo: "Proyecto 2",
+              texto:
+                "Análisis de fake news: cómo identificarlas y por qué se viralizan. Incluye taller interactivo para la comunidad.",
+            },
+            {
+              titulo: "Proyecto 3",
+              texto:
+                "Maqueta de ciudad inteligente con iluminación LED automatizada y gestión de residuos simulada.",
+            },
+            {
+              titulo: "Proyecto 4",
+              texto:
+                "Investigación sobre el acceso a Internet en zonas rurales de Argentina y propuestas de conectividad comunitaria.",
+            },
+          ],
+        },
+        "3ro año": {
+          desc: "El 3ro año demostró que la ciencia no tiene edad. Con proyectos sólidos y bien fundamentados, este curso se animó a resolver problemas reales de su entorno.",
+          proyectos: [
+            {
+              titulo: "Proyecto 1",
+              texto:
+                "Estudio del microbioma del agua de la canilla en diferentes barrios. Análisis microbiológico y recomendaciones sanitarias.",
+            },
+            {
+              titulo: "Proyecto 2",
+              texto:
+                "Diseño de un sistema de compostaje para el comedor escolar con manual de uso y seguimiento mensual.",
+            },
+            {
+              titulo: "Proyecto 3",
+              texto:
+                "Podcast educativo sobre historia de la ciencia en Argentina, con episodios sobre Houssay, Leloir y Milstein.",
+            },
+          ],
+        },
+        "2do año": {
+          desc: "El 2do año sorprendió con proyectos que mezclan lo artístico y lo científico, demostrando que la creatividad es una herramienta fundamental para aprender.",
+          proyectos: [
+            {
+              titulo: "Proyecto 1",
+              texto:
+                "Museo virtual de inventos del siglo XX: una exposición navegable construida con Google Sites con texto, imágenes y videos.",
+            },
+            {
+              titulo: "Proyecto 2",
+              texto:
+                "Experimentos de física recreativa filmados y explicados para chicos de 8 a 12 años, disponibles en YouTube.",
+            },
+            {
+              titulo: "Proyecto 3",
+              texto:
+                "Análisis del lenguaje publicitario y sus técnicas de persuasión. Presentación con ejemplos reales y campaña alternativa.",
+            },
+          ],
+        },
+        "1er año": {
+          desc: "Los más nuevos del secundario demostraron que la curiosidad es el mejor punto de partida. El 1er año presentó proyectos con entusiasmo y mucho trabajo en equipo.",
+          proyectos: [
+            {
+              titulo: "Proyecto 1",
+              texto:
+                "Herbario digital: clasificación de plantas del patio del colegio con fotografías, fichas y código QR para cada especie.",
+            },
+            {
+              titulo: "Proyecto 2",
+              texto:
+                "Encuesta sobre hábitos alimentarios en el colegio y propuesta de menú saludable para el kiosco escolar.",
+            },
+            {
+              titulo: "Proyecto 3",
+              texto:
+                "Mini documental sobre el barrio: historia, vecinos, cambios y desafíos. Grabado y editado por los propios estudiantes.",
+            },
+            {
+              titulo: "Proyecto 4",
+              texto:
+                "Juego de mesa educativo sobre el sistema solar, con tarjetas, dados y preguntas elaboradas por el curso.",
+            },
+          ],
+        },
+      };
+
+      /* ─────────────────────────────────────────
+         ESTADO DE NAVEGACIÓN
+      ───────────────────────────────────────── */
+      let currentPage = "jornadas";
+      let currentCurso = null;
+      let currentSub = "lista"; // lista | curso | galeria | streaming | backstage
+      let galIndex = 0;
+
+      /* ─────────────────────────────────────────
+         ROUTER DE PÁGINAS PRINCIPALES
+      ───────────────────────────────────────── */
+      function showPage(name) {
+        document
+          .querySelectorAll(".page")
+          .forEach((p) => p.classList.remove("active"));
+        document
+          .querySelectorAll("nav ul li a")
+          .forEach((a) => a.classList.remove("active"));
+        document.getElementById("page-" + name).classList.add("active");
+        const navLink = document.getElementById("nav-" + name);
+        if (navLink) navLink.classList.add("active");
+        currentPage = name;
+        if (name === "proyectos") showSub("lista");
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      }
+
+      /* ─────────────────────────────────────────
+         ROUTER DE SUB-VISTAS (dentro de Proyectos)
+      ───────────────────────────────────────── */
+      function showSub(name) {
+        ["lista", "curso", "galeria", "streaming", "backstage"].forEach((s) => {
+          const el = document.getElementById("sub-" + s);
+          if (el) el.style.display = "none";
+        });
+        const target = document.getElementById("sub-" + name);
+        if (target) {
+          target.style.display = "block";
+          target.style.animation = "none";
+          void target.offsetWidth;
+          target.style.animation = "fadeIn .3s ease";
+        }
+        currentSub = name;
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      }
+
+      /* ─────────────────────────────────────────
+         ABRIR CURSO
+      ───────────────────────────────────────── */
+      function openCurso(nombre) {
+        currentCurso = nombre;
+        const data = cursosData[nombre];
+        document.getElementById("curso-titulo").textContent = nombre;
+        document.getElementById("curso-desc").textContent = data.desc;
+        document.getElementById("stream-curso-label").textContent =
+          "Streaming – " + nombre;
+        document.getElementById("backstage-curso-label").textContent =
+          "Backstage – " + nombre;
+        renderAcordeon(data.proyectos);
+        showSub("curso");
+      }
+
+      /* ─────────────────────────────────────────
+         ACORDEÓN DE PROYECTOS
+      ───────────────────────────────────────── */
+      function renderAcordeon(proyectos) {
+        const cont = document.getElementById("acordeon-container");
+        cont.innerHTML = "";
+        proyectos.forEach((p, i) => {
+          const item = document.createElement("div");
+          item.className = "accordion-item";
+          item.innerHTML = `
+            <div class="accordion-header" onclick="toggleAcordeon(this)">
+              <span>${p.titulo}</span>
+              <span class="chevron">&#8964;</span>
+            </div>
+            <div class="accordion-body">
+              <div class="accordion-body-inner">
+                <p>${p.texto}</p>
+                <div class="proy-media">
+                  <div class="proy-img-placeholder">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#aaa" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+                    Foto / video del proyecto
+                  </div>
+                </div>
+              </div>
+            </div>`;
+          cont.appendChild(item);
+        });
+      }
+
+      function toggleAcordeon(header) {
+        const item = header.parentElement;
+        const body = item.querySelector(".accordion-body");
+        const isOpen = item.classList.contains("open");
+        // Cerrar todos
+        document.querySelectorAll(".accordion-item.open").forEach((i) => {
+          i.classList.remove("open");
+          i.querySelector(".accordion-body").style.maxHeight = "0";
+        });
+        if (!isOpen) {
+          item.classList.add("open");
+          body.style.maxHeight = body.scrollHeight + "px";
+          // Re-ajustar cuando el contenido interno cambia de tamaño
+          setTimeout(() => {
+            if (item.classList.contains("open"))
+              body.style.maxHeight = body.scrollHeight + 800 + "px";
+          }, 350);
+        }
+      }
+
+      /* ─────────────────────────────────────────
+         ABRIR SUB-SECCIÓN (galería, streaming, backstage)
+      ───────────────────────────────────────── */
+      function openSub(name) {
+        if (name === "galeria") {
+          galIndex = 0;
+          updateGalCounter();
+        }
+        showSub(name);
+      }
+
+      /* ─────────────────────────────────────────
+         VOLVER ATRÁS
+      ───────────────────────────────────────── */
+      function goBack(destino) {
+        if (destino === "lista") showSub("lista");
+        else if (destino === "curso") showSub("curso");
+      }
+
+      /* ─────────────────────────────────────────
+         GALERÍA
+      ───────────────────────────────────────── */
+      function selectGalImg(idx) {
+        galIndex = idx;
+        updateGalCounter();
+        // En este placeholder no hay imágenes reales; cuando las haya, mostrar aquí
+      }
+      function galNav(dir) {
+        galIndex = (galIndex + dir + 8) % 8;
+        updateGalCounter();
+      }
+      function updateGalCounter() {
+        document.getElementById("gal-counter").textContent =
+          galIndex + 1 + " / 8";
+        // Resaltar thumb activo
+        document.querySelectorAll(".galeria-thumb").forEach((t, i) => {
+          t.style.outline =
+            i === galIndex ? "3px solid var(--blue-mid)" : "none";
+        });
+      }
+
+      /* ─────────────────────────────────────────
+         COUNTDOWN
+      ───────────────────────────────────────── */
+      const eventDate = new Date(2026, 10, 15, 9, 0, 0);
+      function updateCountdown() {
+        const diff = eventDate - new Date();
+        if (diff <= 0) {
+          ["days", "hours", "minutes", "seconds"].forEach(
+            (id) => (document.getElementById(id).textContent = "00")
+          );
+          return;
+        }
+        document.getElementById("days").textContent = String(
+          Math.floor(diff / 86400000)
+        ).padStart(2, "0");
+        document.getElementById("hours").textContent = String(
+          Math.floor((diff % 86400000) / 3600000)
+        ).padStart(2, "0");
+        document.getElementById("minutes").textContent = String(
+          Math.floor((diff % 3600000) / 60000)
+        ).padStart(2, "0");
+        document.getElementById("seconds").textContent = String(
+          Math.floor((diff % 60000) / 1000)
+        ).padStart(2, "0");
+      }
+      updateCountdown();
+      setInterval(updateCountdown, 1000);
+
+      /* Inicializar sub-vistas ocultas */
+      ["curso", "galeria", "streaming", "backstage"].forEach((s) => {
+        const el = document.getElementById("sub-" + s);
+        if (el) el.style.display = "none";
+      });
+    </script>
+    <!-- /page-proyectos -->
+
+    .
+
+    <!-- ══════════ PAGE: INSTITUCIONAL ══════════ -->
+    <div id="page-institucional" class="page">
+      <div class="inst-hero">
+        <div style="max-width: 860px; width: 100%">
+          <div class="hero-badge" style="margin-bottom: 18px">
+            Institucional
+          </div>
+          <h1>Colegio Isaac Newton</h1>
+          <blockquote>
+            "Instituto Educativo de Gestión Privada adscripto a la Enseñanza
+            Oficial de la Provincia de Córdoba"
+          </blockquote>
+        </div>
+      </div>
+
+      <!-- FILOSOFÍA -->
+      <section class="inst-filosofia">
+        <div class="container">
+          <div class="section-label">Nuestra Filosofía</div>
+          <h2>Lo que nos guía</h2>
+          <div class="filosofia-grid">
+            <div class="filosofia-card">
+              <p class="lat">
+                "La subjetividad del individuo en este marco, es al mismo tiempo singular y emergente de las tramas vinculares que lo trascienden y que lo ubican en una relación dinámica de productor y producido."
+              </p>
+              <p class="esp">
+                No nos encontramos frente a un hombre aislado sino en medio de las tramas vinculares sobre las que él va influyendo y que lo van influenciando   
+
+
+              </p>
+            </div>
+            <div class="filosofia-card">
+              <p class="lat">
+                "El sentido de la escuela, sus metodologías y contenidos plasmados en los proyectos curriculares que en ella se trabajen deben vincularse con las exigencias educativas de la condición postmoderna."
+              </p>
+              <p class="esp">
+                La escuela tiene una función implícita y necesaria de ir articulando estos procesos en función de lo que el entorno demanda, en función de una forma de vida, un contexto cultural y socio económico, que acompañe las necesidades, intereses e inquietudes de las personas en la época actual.  
+              </p>
+            </div>
+            <div class="filosofia-card">
+              <p class="lat">
+                "Este paradigma se plantea como propuesta superadora al modelo tradicional de educación rígida, enciclopedista y castrense, en el cual había poco espacio para la imaginación y la creación personal."
+              </p>
+              <p class="esp">
+                Los contenidos se buscan problematizar, incluso hasta lo aparentemente obvio, volviéndolo una actividad de investigación y reflexión de tal manera que la educación no sea sinónimo de transmitir sino de reconocer y construir en la diferencia.
+              </p>
+            </div>
+            <div class="filosofia-card">
+              <p class="lat">
+                "La educación es concebida entonces como el medio que permite el desarrollo y movilización de las potencialidades individuales y colectivas, al generar razonamientos y comportamientos que confluyen en la formación social."
+              </p>
+              <p class="esp">
+                Es así como entendemos el futuro, construyendo el presente. 
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- COLEGIO + CENTROS -->
+      <section class="inst-colegio">
+        <div class="container">
+          <div class="inst-colegio-inner">
+            <div class="inst-colegio-img"></div>
+            <div class="inst-colegio-text">
+              <div class="section-label">El Colegio</div>
+              <h2>Instituto Tecnológico Isaac Newton</h2>
+              <p>
+                Trabajamos en un equipo educativo con un enfoque en la formación
+                integral de los estudiantes. Estamos comprometidos con la
+                calidad de la enseñanza y con la construcción de un equipo de
+                trabajo colaborativo.
+              </p>
+              <p>
+                Nuestros tres centros educativos acompañan a los alumnos en cada
+                etapa de su crecimiento, desde la primaria hasta el nivel
+                secundario completo.
+              </p>
+              </div>
+      </section>
+
+      <!-- DIRECTIVO Y PERSONAL -->
+      <section class="inst-equipo">
+        <div class="container">
+          <div class="section-label">El Equipo</div>
+          <h2>Directivo y Personal</h2>
+          <p class="sub">
+            Las personas que hacen posible el Colegio Isaac Newton cada día.
+          </p>
+          <div class="equipo-grid">
+            <!-- Directores -->
+            <div class="equipo-card">
+              <div class="equipo-avatar">
+                <svg viewBox="0 0 24 24">
+                  <circle cx="12" cy="8" r="4" />
+                  <path d="M4 20c0-4 3.6-7 8-7s8 3 8 7" />
+                </svg>
+              </div>
+              <div class="equipo-name">Silvina Bomone </div>
+              <span class="equipo-role dir">Directora</span>
+            </div>
+            <div class="equipo-card">
+              <div class="equipo-avatar">
+                <svg viewBox="0 0 24 24">
+                  <circle cx="12" cy="8" r="4" />
+                  <path d="M4 20c0-4 3.6-7 8-7s8 3 8 7" />
+                </svg>
+              </div>
+              <div class="equipo-name">Emma Moyano</div>
+              <span class="equipo-role dir">Preceptor</span>
+            </div>
+
+            <!-- Profesores -->
+            <div class="equipo-card">
+              <div class="equipo-avatar">
+                <svg viewBox="0 0 24 24">
+                  <circle cx="12" cy="8" r="4" />
+                  <path d="M4 20c0-4 3.6-7 8-7s8 3 8 7" />
+                </svg>
+              </div>
+              <div class="equipo-name">Paola Cattaneo</div>
+              <span class="equipo-role">Profesora</span>
+            </div>
+            <div class="equipo-card">
+              <div class="equipo-avatar">
+                <svg viewBox="0 0 24 24">
+                  <circle cx="12" cy="8" r="4" />
+                  <path d="M4 20c0-4 3.6-7 8-7s8 3 8 7" />
+                </svg>
+              </div>
+              <div class="equipo-name">Jorge Enrique Peralta</div>
+              <span class="equipo-role">Profesor</span>
+            </div>
+
+            <!-- Administrativos -->
+            <div class="equipo-card">
+              <div class="equipo-avatar">
+                <svg viewBox="0 0 24 24">
+                  <circle cx="12" cy="8" r="4" />
+                  <path d="M4 20c0-4 3.6-7 8-7s8 3 8 7" />
+                </svg>
+              </div>
+              <div class="equipo-name">Carlos Trioni</div>
+              <span class="equipo-role adm">Administrativo</span>
+            </div>
+            <div class="equipo-card">
+              <div class="equipo-avatar">
+                <svg viewBox="0 0 24 24">
+                  <circle cx="12" cy="8" r="4" />
+                  <path d="M4 20c0-4 3.6-7 8-7s8 3 8 7" />
+                </svg>
+              </div>
+              <div class="equipo-name">Facundo Herrera Oracio</div>
+              <span class="equipo-role adm">Administrativo</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- UBICACIÓN -->
+      <section class="inst-ubicacion">
+        <div class="container">
+          <div class="section-label">Dónde estamos</div>
+          <h2>Ubicación</h2>
+          <div class="ubicacion-inner">
+      <div class="ubicacion-card">
+
+  <div class="ubicacion-info">
+    <h3>Colegio Tecnológico Isaac Newton</h3>
+
+    <p>
+      Molino de Torres 6635<br>
+      X5021BDE, Córdoba, Argentina
+    </p>
+
+    <a
+      href="https://www.google.com/maps/search/?api=1&query=Molino+de+Torres+6635+Cordoba"
+      target="_blank"
+      class="btn-mapa"
+    >
+      Ver en Google Maps
+    </a>
+  </div>
+
+  <div class="mapa-container">
+    <iframe
+      src="https://maps.google.com/maps?q=Molino%20de%20Torres%206635%20Cordoba&t=&z=15&ie=UTF8&iwloc=&output=embed"
+      loading="lazy">
+    </iframe>
+  </div>
+
+</div>
+      </section>
+
+      <!-- CONTACTO -->
+      <section class="inst-contacto">
+        <div class="container">
+          <div class="section-label">Escribinos</div>
+          <h2>Contacto</h2>
+          <div class="contacto-cards">
+            <div class="contacto-card">
+              <div class="contacto-icon">
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.68A2 2 0 012 0h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14.92z"
+                  />
+                </svg>
+              </div>
+              <div class="contacto-card-text">
+                <strong>Teléfono</strong>
+                <span>03543 443338 / 426466</span>
+              </div>
+            </div>
+            <div class="contacto-card">
+              <div class="contacto-icon" style="background: var(--orange)">
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                  />
+                  <polyline points="22,6 12,13 2,6" />
+                </svg>
+              </div>
+              <div class="contacto-card-text">
+                <strong>Correo electrónico</strong>
+                <span>isaacnewton@live.com.ar</span>
+              </div>
+            </div>
+            <div class="contacto-card">
+              <div class="contacto-icon" style="background: var(--blue-mid)">
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"
+                  />
+                  <circle cx="12" cy="9" r="2.5" />
+                </svg>
+              </div>
+              <div class="contacto-card-text">
+                <strong>Dirección</strong>
+                <span>Molino  de  Torres 6635, Villa Warcalde,   Córdoba</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- /page-institucional -->
+
+    <!-- ─── FOOTER (siempre visible) ─── -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-logo">
+          <img src="logo1.png" alt="Logo" class="logo-colegio" />
+          <h3>Colegio Institucional<br />Isaac Newton</h3>
+          <div class="social-icons">
+            <a href="#"><img src="instalogo.png" alt="Instagram" /></a>
+            <a href="#"><img src="facelogo.png" alt="Facebook" /></a>
+            <a href="#"><img src="logowhats.png" alt="WhatsApp" /></a>
+          </div>
+        </div>
+
+        <div class="footer-column">
+          <h4>JORNADAS</h4>
+          <ul>
+            <li><a onclick="showPage('jornadas')">Bienvenida</a></li>
+            <li><a onclick="showPage('jornadas')">Momentos compartidos</a></li>
+            <li><a onclick="showPage('jornadas')">Otros años</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>CONTACTOS</h4>
+          <ul>
+            <li><a onclick="showPage('contactos')">Redes</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>PROYECTOS</h4>
+          <ul>
+            <li><a onclick="showPage('proyectos')">1er año</a></li>
+            <li><a onclick="showPage('proyectos')">2do año</a></li>
+            <li><a onclick="showPage('proyectos')">3er año</a></li>
+            <li><a onclick="showPage('proyectos')">4to año</a></li>
+            <li><a onclick="showPage('proyectos')">5to año</a></li>
+            <li><a onclick="showPage('proyectos')">6to año</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>INSTITUCIONAL</h4>
+          <ul>
+            <li><a onclick="showPage('institucional')">Colegio</a></li>
+            <li>
+              <a onclick="showPage('institucional')">Directivos y Personal</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        ©2026 Instituto Tecnológico Isaac Newton S.A.
+      </div>
+    </footer>
+
+    <script>
+      /* ── PAGE ROUTER ── */
+      function showPage(name) {
+        document
+          .querySelectorAll(".page")
+          .forEach((p) => p.classList.remove("active"));
+        document
+          .querySelectorAll("nav ul li a")
+          .forEach((a) => a.classList.remove("active"));
+        document.getElementById("page-" + name).classList.add("active");
+        const navLink = document.getElementById("nav-" + name);
+        if (navLink) navLink.classList.add("active");
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      }
+
+      /* ── COUNTDOWN ── */
+      const eventDate = new Date(2026, 10, 15, 9, 0, 0); // noviembre 15, 2026
+      function updateCountdown() {
+        const diff = eventDate - new Date();
+        if (diff <= 0) {
+          ["days", "hours", "minutes", "seconds"].forEach(
+            (id) => (document.getElementById(id).textContent = "00")
+          );
+          return;
+        }
+        document.getElementById("days").textContent = String(
+          Math.floor(diff / 86400000)
+        ).padStart(2, "0");
+        document.getElementById("hours").textContent = String(
+          Math.floor((diff % 86400000) / 3600000)
+        ).padStart(2, "0");
+        document.getElementById("minutes").textContent = String(
+          Math.floor((diff % 3600000) / 60000)
+        ).padStart(2, "0");
+        document.getElementById("seconds").textContent = String(
+          Math.floor((diff % 60000) / 1000)
+        ).padStart(2, "0");
+      }
+      updateCountdown();
+      setInterval(updateCountdown, 1000);
+    </script>
+  </body>
+</html>
